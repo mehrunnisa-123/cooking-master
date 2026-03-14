@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Master | Interactive Recipe Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>🍳 Cooking Master</h1>
+            <p>Discover, Cook, and Save Your Favorite Recipes</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#search-panel">Home</a></li>
+            <li><a href="#recipe-results">Recipes</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="find-recipe-wrapper">
+            <section id="search-panel">
+                <h2>Find Your Next Meal</h2>
+                <div class="search-controls">
+                    <input type="text" id="search-input" placeholder="Search by ingredient (e.g., Egg, Flour)...">
+                    <button id="search-btn" class="glass-btn">Search</button>
+                </div>
+                
+                <div class="filter-group">
+                    <p><strong>Categories:</strong></p>
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Breakfast"> Breakfast
+                    </label>
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Lunch"> Lunch
+                    </label>
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Dessert"> Dessert
+                    </label>
+                </div>
+            </section>
+        </div>
+
+        <section id="recipe-results">
+            <h2>Our Top Recipes</h2>
+            <div id="results-container" class="grid-container">
+                <p class="loading-msg">Use the search bar above to explore recipes...</p>
+            </div>
+        </section>
+
+        <section id="favorites">
+            <h2>My Favorites ❤️</h2>
+            <div class="favorites-container">
+                <ul id="favorites-list">
+                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Cooking Masters(by mehru...) | Designed for Food Lovers</p>
+            <p>Contact: <a href="mailto:info@flavorfinder.com" style="color: #ff6b6b;">info@flavorfinder.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
